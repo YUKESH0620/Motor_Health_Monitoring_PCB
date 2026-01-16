@@ -1,0 +1,12 @@
+# ===============================
+# KiCad auto backups & cache
+# ===============================
+*-backups/
+*.zip
+fp-info-cache
+fp-lib-table
+sym-lib-table
+*.kicad_prl
+*.bak
+*.tmp
+_autosave*
