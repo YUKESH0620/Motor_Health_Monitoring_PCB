@@ -1,0 +1,13 @@
+** Drc report for Motor_Health_Monitoring_PCB.kicad_pcb **
+** Created on 2026-01-16T14:18:30+0330 **
+
+** Found 1 DRC violations **
+[lib_footprint_mismatch]: Footprint 'BELFUSE_SS-52400-002' does not match copy in library 'Esp-32_sensor_Board004_Footprints'.
+    Local override; warning (excluded)
+    @(77.6707 mm, 126.6145 mm): Footprint J2
+
+** Found 0 unconnected pads **
+
+** Found 0 Footprint errors **
+
+** End of Report **

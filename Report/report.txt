@@ -1,0 +1,14 @@
+Plotted to 'C:\KiCad\Motor_Health_Monitoring005\Motor_Health_Monitoring_PCB-F_Cu.gbr'.
+Plotted to 'C:\KiCad\Motor_Health_Monitoring005\Motor_Health_Monitoring_PCB-In1_Cu.gbr'.
+Plotted to 'C:\KiCad\Motor_Health_Monitoring005\Motor_Health_Monitoring_PCB-In2_Cu.gbr'.
+Plotted to 'C:\KiCad\Motor_Health_Monitoring005\Motor_Health_Monitoring_PCB-B_Cu.gbr'.
+Plotted to 'C:\KiCad\Motor_Health_Monitoring005\Motor_Health_Monitoring_PCB-F_Paste.gbr'.
+Plotted to 'C:\KiCad\Motor_Health_Monitoring005\Motor_Health_Monitoring_PCB-B_Paste.gbr'.
+Plotted to 'C:\KiCad\Motor_Health_Monitoring005\Motor_Health_Monitoring_PCB-F_Silkscreen.gbr'.
+Plotted to 'C:\KiCad\Motor_Health_Monitoring005\Motor_Health_Monitoring_PCB-B_Silkscreen.gbr'.
+Plotted to 'C:\KiCad\Motor_Health_Monitoring005\Motor_Health_Monitoring_PCB-F_Mask.gbr'.
+Plotted to 'C:\KiCad\Motor_Health_Monitoring005\Motor_Health_Monitoring_PCB-B_Mask.gbr'.
+Plotted to 'C:\KiCad\Motor_Health_Monitoring005\Motor_Health_Monitoring_PCB-Edge_Cuts.gbr'.
+Created Gerber job file 'C:\KiCad\Motor_Health_Monitoring005\Motor_Health_Monitoring_PCB-job.gbrjob'.
+Info: Done.
+Info: Done.
