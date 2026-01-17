@@ -1,58 +1,8 @@
-\# Motor Health Monitoring System – Firmware
+# Motor Health Monitoring System – Firmware
 
 
 
-\## Overview
-
-This firmware is developed for an 8051-based Motor Health Monitoring System.
-
-It monitors motor current and temperature, controls motor operation via PWM,
-
-and provides fault protection with UART, keypad, and OLED interfaces.
-
-
-
-The firmware is designed to be \*\*hardware-independent during development\*\*
-
-and supports \*\*simulation-based validation\*\* prior to PCB manufacturing.
-
-
-
----
-
-
-
-\## Features
-
-\- Motor control using PWM
-
-\- Overcurrent and overtemperature protection
-
-\- Fault latch mechanism
-
-\- UART command interface
-
-\- 4×4 keypad control
-
-\- OLED (SSD1306) display support
-
-\- Simulation mode for pre-hardware testing
-
-
-
----
-
-
-
-\## Firmware Architecture
-
-
-
-\# Motor Health Monitoring System – Firmware
-
-
-
-\## Overview
+## Overview
 
 This firmware is developed for an 8051-based Motor Health Monitoring System.
 
@@ -62,31 +12,9 @@ and provides fault protection with UART, keypad, and OLED interfaces.
 
 
 
-The firmware is designed to be \*\*hardware-independent during development\*\*
+The firmware is designed to be **hardware-independent during development**
 
-and supports \*\*simulation-based validation\*\* prior to PCB manufacturing.
-
-
-
----
-
-
-
-\## Features
-
-\- Motor control using PWM
-
-\- Overcurrent and overtemperature protection
-
-\- Fault latch mechanism
-
-\- UART command interface
-
-\- 4×4 keypad control
-
-\- OLED (SSD1306) display support
-
-\- Simulation mode for pre-hardware testing
+and supports **simulation-based validation** prior to PCB manufacturing.
 
 
 
@@ -94,27 +22,21 @@ and supports \*\*simulation-based validation\*\* prior to PCB manufacturing.
 
 
 
-\## Firmware Architecture
+## Features
 
+- Motor control using PWM
 
+- Overcurrent and overtemperature protection
 
-\# Motor Health Monitoring System – Firmware
+- Fault latch mechanism
 
+- UART command interface
 
+- 4×4 keypad control
 
-\## Overview
+- OLED (SSD1306) display support
 
-This firmware is developed for an 8051-based Motor Health Monitoring System.
-
-It monitors motor current and temperature, controls motor operation via PWM,
-
-and provides fault protection with UART, keypad, and OLED interfaces.
-
-
-
-The firmware is designed to be \*\*hardware-independent during development\*\*
-
-and supports \*\*simulation-based validation\*\* prior to PCB manufacturing.
+- Simulation mode for pre-hardware testing
 
 
 
@@ -122,31 +44,27 @@ and supports \*\*simulation-based validation\*\* prior to PCB manufacturing.
 
 
 
-\## Features
+## Features
 
-\- Motor control using PWM
+- Motor control using PWM
 
-\- Overcurrent and overtemperature protection
+- Overcurrent and overtemperature protection
 
-\- Fault latch mechanism
+- Fault latch mechanism
 
-\- UART command interface
+- UART command interface
 
-\- 4×4 keypad control
+- 4×4 keypad control
 
-\- OLED (SSD1306) display support
+- OLED (SSD1306) display support
 
-\- Simulation mode for pre-hardware testing
+- Simulation mode for pre-hardware testing
 
 
 
 ---
 
-
-
-\## Firmware Architecture
-
-
+## Firmware Architecture
 
 Firmware/
 
@@ -172,31 +90,13 @@ Firmware/
 
 ---
 
+## System States
 
+- **IDLE**  : Motor stopped, safe state
 
-\## System States
+- **RUN**   : Motor running with PWM control
 
-\- \*\*IDLE\*\*  : Motor stopped, safe state
-
-\- \*\*RUN\*\*   : Motor running with PWM control
-
-\- \*\*FAULT\*\* : Motor disabled due to fault (latched)
-
-
-
----
-
-
-
-\## Build Environment
-
-\- Compiler: SDCC (mcs51)
-
-\- Target MCU: AT89C51
-
-\- Build Method: `build.bat`
-
-\- Output: `motor\_health\_fw.ihx`
+- **FAULT** : Motor disabled due to fault (latched)
 
 
 
@@ -204,7 +104,23 @@ Firmware/
 
 
 
-\## Simulation Mode
+## Build Environment
+
+- Compiler: SDCC (mcs51)
+
+- Target MCU: AT89C51
+
+- Build Method: `build.bat`
+
+- Output: `motor\_health\_fw.ihx`
+
+
+
+---
+
+
+
+## Simulation Mode
 
 This firmware supports simulation mode to validate logic without hardware.
 
@@ -212,13 +128,13 @@ This firmware supports simulation mode to validate logic without hardware.
 
 Simulated features:
 
-\- ADC values
+- ADC values
 
-\- Fault injection
+- Fault injection
 
-\- UART command handling
+- UART command handling
 
-\- OLED content updates
+- OLED content updates
 
 
 
@@ -230,13 +146,13 @@ This allows full firmware validation before PCB manufacturing.
 
 
 
-\## Notes
+## Notes
 
-\- Hardware testing will be performed after PCB fabrication
+- Hardware testing will be performed after PCB fabrication
 
-\- Firmware is structured for easy extension and maintenance
+- Firmware is structured for easy extension and maintenance
 
-\- Code is written to be portable and standards-compliant
+- Code is written to be portable and standards-compliant
 
 
 
@@ -244,7 +160,7 @@ This allows full firmware validation before PCB manufacturing.
 
 
 
-\## Author
+## Author
 
 Motor Health Monitoring System  
 
