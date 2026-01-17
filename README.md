@@ -64,6 +64,7 @@ Microcontroller (8051)
  |   |--> Temperature
  |   |--> Vibration
  |   |--> IR Sensor
+ |
  |--> Motor Driver (PWM Control)
  |--> Display (OLED)
  |--> Keypad Interface
