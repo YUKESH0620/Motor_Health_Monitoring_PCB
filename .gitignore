@@ -10,3 +10,25 @@ sym-lib-table
 *.bak
 *.tmp
 _autosave*
+fp-info-cache
+fp-lib-table
+*.kicad_prl
+sym-lib-table
+
+# ===== Firmware build outputs =====
+Firmware/sdcc_build/
+Firmware/Objects/
+
+# SDCC / Keil artifacts
+*.obj
+*.rel
+*.lst
+*.sym
+*.rst
+*.asm
+*.__i
+
+# ===== Compiler listing outputs =====
+Firmware/Listings/
+*.lst
+*.m51

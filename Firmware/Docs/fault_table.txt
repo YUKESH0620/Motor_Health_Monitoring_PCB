@@ -1,0 +1,36 @@
+FAULT TABLE – MOTOR HEALTH MONITORING SYSTEM
+
+----------------------------------------------------------
+Fault Name        : Overcurrent (OC)
+Sensor            : ACS770
+Threshold         : 15 A
+Detection Type    : Instantaneous
+Latch             : YES
+Recovery          : RESET command / RESET key
+Action Taken      :
+  - Motor PWM disabled
+  - Fault LED ON
+  - System state = FAULT
+----------------------------------------------------------
+
+----------------------------------------------------------
+Fault Name        : Overtemperature (OT)
+Sensor            : LM35
+Threshold         : 70 °C
+Detection Type    : Instantaneous
+Latch             : YES
+Recovery          : RESET command / RESET key
+Action Taken      :
+  - Motor PWM disabled
+  - Fault LED ON
+  - System state = FAULT
+----------------------------------------------------------
+
+----------------------------------------------------------
+Global Fault Behavior
+----------------------------------------------------------
+- Fault is global (single current sensor)
+- Both motors are disabled on any fault
+- Fault remains latched until RESET
+- START command ignored during FAULT state
+----------------------------------------------------------
