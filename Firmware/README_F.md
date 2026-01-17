@@ -1,5 +1,6 @@
 # Motor Health Monitoring System – Firmware
 
+---
 
 
 ## Overview
@@ -43,26 +44,6 @@ and supports **simulation-based validation** prior to PCB manufacturing.
 ---
 
 
-
-## Features
-
-- Motor control using PWM
-
-- Overcurrent and overtemperature protection
-
-- Fault latch mechanism
-
-- UART command interface
-
-- 4×4 keypad control
-
-- OLED (SSD1306) display support
-
-- Simulation mode for pre-hardware testing
-
-
-
----
 
 ## Firmware Architecture
 
