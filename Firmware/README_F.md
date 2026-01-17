@@ -1,6 +1,5 @@
 # Motor Health Monitoring System – Firmware
 
----
 
 
 ## Overview
