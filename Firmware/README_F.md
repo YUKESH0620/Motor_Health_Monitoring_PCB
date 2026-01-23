@@ -125,6 +125,17 @@ This allows full firmware validation before PCB manufacturing.
 ---
 
 
+## Reserved Hardware Signals
+
+The IR sensor output and vibration sensor digital output are present
+in the hardware design but intentionally unused in firmware v1.0.
+They are reserved for future safety and diagnostic enhancements.
+
+These signals are not part of the current fault detection logic
+to avoid false triggers and ensure deterministic motor protection.
+
+---
+
 
 ## Notes
 
