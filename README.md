@@ -144,13 +144,35 @@ The repository contains:
 
 ---
 
+# Simulation-Proteus 8 Professional
+
+The system was simulated using Proteus to validate firmware behavior and system-level logic prior to hardware availability.
+The AT89C51 microcontroller, UART interface, motor control logic, fault indicators, and peripheral connections were instantiated according to the schematic.
+
+## Proteus Schematic
+<img width="1172" height="788" alt="Screenshot 2026-01-24 002229" src="https://github.com/user-attachments/assets/1bccb592-e572-41ff-ae0c-5ac472a2ac35" />
+
+Sensor inputs were emulated using adjustable sources to exercise overcurrent and overtemperature fault paths. UART output was used to confirm firmware execution flow and system state transitions. Motor operation was verified logically through enable signals and status indicators rather than physical motor dynamics.
+
+Due to simulator limitations with mixed-signal SPI peripherals on the 8051 core, ADC behavior was validated at firmware logic level. Electrical accuracy of sensor interfaces is planned for validation on physical hardware.
+
+---
+
 ## Validation Strategy
 
-* Hardware behavior validated using **Proteus simulation**
-* Sensor outputs emulated for fault testing
-* UART used as primary observation interface
-* Motor behavior verified logically
-* No dependency on physical PCB availability
+* Firmware behavior validated using Proteus simulation at system and logic level
+
+* UART used as the primary observation and debug interface to confirm system states
+
+* Motor control and global shutdown behavior verified through control signals and status indicators
+
+* Fault detection, latching, and recovery logic validated against defined thresholds
+
+* Sensor behavior emulated to exercise fault paths; ADC interface validated at firmware logic level
+
+* Simulation limitations identified and documented; full electrical validation planned on physical hardware
+
+* No dependency on physical PCB availability for firmware and system-level validation
 
 ---
 
