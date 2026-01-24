@@ -1,3 +1,4 @@
+```
 POWER ON / RESET
         |
         v
@@ -80,4 +81,3 @@ Update OLED Display
         |
         v
 Repeat MAIN LOOP
-
