@@ -1,5 +1,5 @@
-UART PROTOCOL – MOTOR HEALTH MONITORING SYSTEM
-
+## UART PROTOCOL - MOTOR HEALTH MONITORING SYSTEM
+```
 Baud Rate   : 9600
 Data Bits   : 8
 Parity      : None
@@ -7,7 +7,7 @@ Stop Bits   : 1
 Line Ending : LF (\n)
 Case        : Case-insensitive
 Echo        : Enabled
-
+```
 -----------------------------------------
 COMMAND LIST
 -----------------------------------------
@@ -33,11 +33,12 @@ PWM <0–100>
 STATUS
 - Action: Report current system status
 - Response Format:
+  ```
   STATE=<IDLE/RUN/FAULT>
   PWM=<value>
   I=<current_A>
   T=<temperature_C>
-
+  ```
 -----------------------------------------
 ERROR RESPONSES
 -----------------------------------------
