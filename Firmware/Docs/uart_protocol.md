@@ -38,22 +38,6 @@ STATUS
   I=<current_A>
   T=<temperature_C>
 
-SIM OC ON
-- Action: Simulate overcurrent fault
-- Response: SIM:OC=ON
-
-SIM OC OFF
-- Action: Disable overcurrent simulation
-- Response: SIM:OC=OFF
-
-SIM OT ON
-- Action: Simulate overtemperature fault
-- Response: SIM:OT=ON
-
-SIM OT OFF
-- Action: Disable overtemperature simulation
-- Response: SIM:OT=OFF
-
 -----------------------------------------
 ERROR RESPONSES
 -----------------------------------------
