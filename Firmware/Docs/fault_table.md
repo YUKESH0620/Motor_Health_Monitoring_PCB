@@ -1,5 +1,6 @@
-FAULT TABLE – MOTOR HEALTH MONITORING SYSTEM
 
+## FAULT TABLE - MOTOR HEALTH MONITORING SYSTEM
+```
 ----------------------------------------------------------
 Fault Name        : Overcurrent (OC)
 Sensor            : ACS770
@@ -25,8 +26,7 @@ Action Taken      :
   - Fault LED ON
   - System state = FAULT
 ----------------------------------------------------------
-
-
+```
 ----------------------------------------------------------
 Reserved Signals (Not Used in v1.0)
 ----------------------------------------------------------
@@ -40,8 +40,6 @@ Reason:
 - Current and temperature provide deterministic protection
 
 These signals are reserved for future diagnostic features.
-----------------------------------------------------------
-
 
 ----------------------------------------------------------
 Global Fault Behavior
