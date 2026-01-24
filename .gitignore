@@ -32,3 +32,4 @@ Firmware/Objects/
 Firmware/Listings/
 *.lst
 *.m51
+sd
