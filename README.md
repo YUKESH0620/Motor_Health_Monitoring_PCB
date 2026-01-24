@@ -158,38 +158,6 @@ Due to simulator limitations with mixed-signal SPI peripherals on the 8051 core,
 
 ---
 
-# Simulation v2 — Firmware Logic Validation
-
-Simulation v2 is a firmware-level validation mode used to demonstrate system behavior and fault-handling logic without relying on unreliable ADC or analog simulation in Proteus.
-
-Since Proteus does not accurately model external ADC (SPI) behavior, this mode injects logical sensor values at the firmware level while keeping all production logic unchanged.
-
-### What is validated
-- Fault detection and latching  
-- Motor shutdown on fault  
-- Fault reset and recovery  
-- UART-based manual fault injection  
-
-### What is not validated
-- ADC electrical behavior  
-- Sensor accuracy or analog performance  
-
-### Key characteristics
-- Enabled at compile time using `SIMULATION_MODE`  
-- Simulation logic is isolated and removable  
-- No modification to ADC drivers or fault logic  
-- Same firmware logic used for real hardware  
-
-### Simulation behavior
-- Time-based automatic faults (overcurrent, overtemperature)  
-- UART command (`FAULT`) for manual fault triggering  
-- OLED displays system state only (no physical values)
-
-> **Note:** Simulation v2 is intended strictly for logic-level validation and demonstration.  
-> All performance and accuracy claims are based on real hardware testing.
-
----
-
 ## Validation Strategy
 
 * Firmware behavior validated using Proteus simulation at system and logic level
