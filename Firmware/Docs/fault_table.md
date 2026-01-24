@@ -26,6 +26,23 @@ Action Taken      :
   - System state = FAULT
 ----------------------------------------------------------
 
+
+----------------------------------------------------------
+Reserved Signals (Not Used in v1.0)
+----------------------------------------------------------
+IR sensor digital output and vibration sensor D0 output
+are present in hardware but are not used for fault detection
+in firmware v1.0.
+
+Reason:
+- Digital vibration thresholds are noisy
+- IR detection is application-dependent
+- Current and temperature provide deterministic protection
+
+These signals are reserved for future diagnostic features.
+----------------------------------------------------------
+
+
 ----------------------------------------------------------
 Global Fault Behavior
 ----------------------------------------------------------

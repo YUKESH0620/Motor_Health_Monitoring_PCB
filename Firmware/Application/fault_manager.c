@@ -18,6 +18,9 @@ void Fault_Init(void)
 
     /* Fault LED OFF (active LOW) */
     LED_FAULT = 1;
+    
+    /* Motor status LED ON (motor allowed) */
+    LED_MOTOR = 0;
 }
 
 void Fault_Check(float current_A, float temperature_C)
@@ -31,6 +34,9 @@ void Fault_Check(float current_A, float temperature_C)
 
             /* Indicate fault */
             LED_FAULT = 0;
+
+             /* Motor NOT allowed during fault */
+            LED_MOTOR = 1; 
 
             /* Disable BOTH motors */
             EN1_PWM = 0;
